@@ -102,13 +102,13 @@ If you require further assistance contact the support team @ [Discord](https://d
 * Paste the code below into the Bitvise terminal then press enter (it will just go to a new line)
 ![Example-RootPassEnter](https://i.imgur.com/K6xlnav.png)
 
-`wget -q https://raw.githubusercontent.com/acr-official/acreage/releases/download/v2.2.2/acr-mn.sh`
+`wget -q https://github.com/acr-official/MasterNode-Script/blob/master/acr_install.sh`
 ***
 
 ***Step 8***
 * Paste the code below into the Bitvise terminal then press enter
 
-`bash acr-mn.sh`
+`bash acr_install.sh`
 
 ![Example-Bash](https://i.imgur.com/myvmKTE.png)
 
