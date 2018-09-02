@@ -192,7 +192,7 @@ Click "File Save"
 ***step 4***
 * Check the status of your masternode within the VPS by using the command below:
 
-`arc-cli masternode status`
+`acr-cli masternode status`
 
 `acr-cli getinfo`
 
