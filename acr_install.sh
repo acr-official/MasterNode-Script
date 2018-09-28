@@ -164,6 +164,11 @@ addnode=139.59.175.4
 addnode=66.42.78.14
 addnode=206.189.79.232
 addnode=207.148.81.46
+addnode=94.130.180.4
+addnode=209.250.224.250
+addnode=199.247.13.100
+addnode=45.77.224.210
+addnode=188.40.173.230
 
 
 EOF
