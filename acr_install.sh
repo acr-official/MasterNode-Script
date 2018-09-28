@@ -9,6 +9,9 @@ COIN_PATH='/usr/local/bin/'
 COIN_REPO='https://github.com/acr-official/acreage.git'
 COIN_TGZ='https://github.com/acr-official/acreage/releases/download/v2.2.2/acr222-daemon.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
+COIN_BOOTSTRAP_URL='https://acreagecoin.io/wp-content/uploads/2018/09/acr_block_100000_bootstrap.zip'
+COIN_BOOTSTRAP_ZIP='acr_block_100000_bootstrap.zip'
+COIN_BOOTSTRAP_FILE='bootstrap.dat'
 COIN_NAME='Acreage'
 COIN_PORT=3771
 RPC_PORT=3782
@@ -279,11 +282,23 @@ function important_information() {
  echo -e "${BLUE}================================================================================================================================${NC}"
 }
 
+function extract_bootstrap() {
+  echo -e "${GREEN}Extracting bootstrap${NC}"
+  cd $TMP_FOLDER >/dev/null 2>&1
+  wget -q $COIN_BOOTSTRAP_URL
+  compile_error
+  unzip $COIN_BOOTSTRAP_ZIP >/dev/null 2>&1
+  cp $COIN_BOOTSTRAP_FILE $CONFIGFOLDER
+  cd ~ >/dev/null 2>&1
+  rm -rf $TMP_FOLDER >/dev/null 2>&1
+  clear
+}
 function setup_node() {
   get_ip
   create_config
   create_key
   update_config
+  extract_bootstrap
   enable_firewall
   important_information
   configure_systemd
