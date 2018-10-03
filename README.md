@@ -95,7 +95,7 @@ If you require further assistance contact the support team @ [Discord](https://d
 ***
 
 ***Step 6*** 
-* Once you have clicked open it will open a security alert (click yes).  
+* Once you have clicked open, it will open a security alert (click yes).  
 ***
 
 ***Step 7***
