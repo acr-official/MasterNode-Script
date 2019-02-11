@@ -9,10 +9,7 @@ COIN_PATH='/usr/local/bin/'
 COIN_REPO='https://github.com/acr-official/acreage-master.git'
 COIN_TGZ='https://github.com/acr-official/acreage-master/releases/download/V3.0/daemon.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_BOOTSTRAP_URL='https://drive.google.com/open?id=1UIsD9vKWtcWKabqasSLsym0m-sgufFxa'
-COIN_BOOTSTRAP_ZIP='acr_block_100000_bootstrap.zip'
-COIN_BOOTSTRAP_FILE='bootstrap.dat'
-COIN_NAME='Acreage'
+COIN_NAME='acreage'
 COIN_PORT=3771
 RPC_PORT=3782
 
@@ -154,21 +151,15 @@ externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
 
 #Addnodes
-addnode=46.243.253.171
-addnode=46.235.25.66
-addnode=80.211.152.61
-addnode=78.47.55.197
-addnode=94.130.186.16
-addnode=149.248.0.234
-addnode=139.59.175.4
-addnode=66.42.78.14
-addnode=206.189.79.232
-addnode=207.148.81.46
-addnode=94.130.180.4
-addnode=209.250.224.250
-addnode=199.247.13.100
-addnode=45.77.224.210
-addnode=188.40.173.230
+addnode=159.65.204.60:3771
+addnode=167.99.101.46
+addnode=138.68.50.187
+addnode=159.65.106224
+addnode=178.128.76.238
+addnode=178.128.78.242
+addnode=178.128.77.236
+addnode=138.68.24.126
+addnode=142.93.24.95
 
 
 EOF
