@@ -9,6 +9,9 @@ COIN_PATH='/usr/local/bin/'
 COIN_REPO='https://github.com/acr-official/acreage-master.git'
 COIN_TGZ='https://github.com/acr-official/acreage-master/releases/download/V3.0/daemon.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
+COIN_BOOTSTRAP_URL='https://drive.google.com/open?id=1UIsD9vKWtcWKabqasSLsym0m-sgufFxa'
+COIN_BOOTSTRAP_ZIP='acr_block_100000_bootstrap.zip'
+COIN_BOOTSTRAP_FILE='bootstrap.dat'
 COIN_NAME='acreage'
 COIN_PORT=3771
 RPC_PORT=3782
